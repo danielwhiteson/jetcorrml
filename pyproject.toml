@@ -1,0 +1,34 @@
+[project]
+name = "jetcorrml"
+version = "0.9.8"
+description = "Neural-network jet energy calibration: code for Learning to Calibrate Jet Energies"
+readme = "README.md"
+authors = [
+    { name = "Daniel Whiteson", email = "danielwhiteson@gmail.com" },
+]
+requires-python = ">=3.14"
+dependencies = [
+    "awkward>=2.9.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=2.0.0",
+    "pyarrow>=23.0.1",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "torch",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[build-system]
+requires = ["uv_build>=0.9.15,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = ["jetcorrml", "steps"]

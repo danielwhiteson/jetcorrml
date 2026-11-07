@@ -1,0 +1,10 @@
+.venv/
+data/
+output/
+__pycache__/
+*.pyc
+paper_check/
+paper_check_logs/
+.done/
+inputs/
+.DS_Store

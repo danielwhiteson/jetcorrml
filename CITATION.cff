@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it and the paper, Learning to Calibrate Jet Energies."
+type: software
+title: "jetcorrml: the code of \"Learning to Calibrate Jet Energies\""
+abstract: "Reproduces every figure and table of the paper Learning to Calibrate Jet Energies (B. Malaescu, B. Nachman, M. Ram, S. Schramm, D. Whiteson) from the simulated samples at https://doi.org/10.5281/zenodo.24043234."
+authors:
+  - family-names: Whiteson
+    given-names: Daniel
+    affiliation: "Department of Physics & Astronomy, University of California, Irvine"
+license: MIT
+repository-code: "https://github.com/danielwhiteson/jetcorrml"
+keywords:
+  - jet energy scale
+  - jet calibration
+  - machine learning
+  - pile-up
